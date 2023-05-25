@@ -1,0 +1,347 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #14213D;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.15s;
+}
+.nav-btn:hover{
+    color: #FCA311;
+}
+.nav-brand{
+    font-size: 3.5rem;
+    font-family: "Roboto", sans-serif;
+    color: #FCA311;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+/* Profile Card */
+.profilecard{
+    width: 30rem;
+    height: 17rem;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 6rem;
+    right: 18rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilecard-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.profilecard-logininfo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.loginimg{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1000px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logininfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.loginusername{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    margin: 0;
+}
+.loginemail{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: #14213D;
+    margin: 0;
+}
+.profilecard-pages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.profilecard-btn{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    padding: 0;
+
+    transition: all 0.15s;
+}
+.profilecard-btn:hover{
+    border-bottom: 1px solid #14213D;
+}
+.dark-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17rem;
+}
+.darkmode-txt{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    margin: 0;
+}
+/* Today Screen */
+.today{
+    width: 60rem;
+    height: 40rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+}
+.today-container{
+    width: 60rem;
+    height: 40rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-tracks: flex-start;
+}
+.today-date{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.today-date-header{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    margin: 0;
+}
+.today-date-text{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: #14213D;
+    margin: 0;
+}
+.today-task-list{
+    width: 50rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 5rem;
+    margin: 3rem 0 3rem 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.today-task-list::-webkit-scrollbar {
+    display: none;
+}
+
+.today-task{
+    display: grid;
+    grid-template-columns:  5rem 40rem 5rem;
+    grid-template-rows: 3rem;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+.today-task-text{
+    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    font-weight: 400;
+    margin: 0;
+}
+
+.task-del-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.task-del-btn:hover{
+    color: #FCA311;
+}
+.del-task-icon{
+    font-size: 1.6rem;   
+}
+
+/* Task Add Card */
+.taskcard-container{
+    width: 40rem;
+    height: 24rem;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 25rem;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.taskcard-task-input{
+    width: 29rem;
+    height: 5rem;
+    border: 2px solid #14213D;
+    border-radius: 15px;
+    padding: 0 1rem;
+
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+
+    overflow: none;
+}
+::placeholder{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+}
+.taskcard-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+}
+.taskcard-date-btn{
+    background-color: white;
+    border: 2px solid #14213D;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.taskcard-date-btn:hover{
+    background-color: #14213D;
+    color: white;
+}
+.taskcard-right-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.cancel-task-btn{
+    background-color: white;
+    border: 2px solid #14213D;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.cancel-task-btn:hover{
+    background-color: #14213D;
+    color: white;
+}
+.add-task-btn{
+    background-color: white;
+    border: 2px solid #14213D;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: #14213D;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.add-task-btn:hover{
+    background-color: #14213D;
+    color: white;
+}
+/* Task Card Date Card */
+.calendarcard {
+    width: 20rem;
+    height: 20rem;
+    background-color: blue;
+    position: absolute;
+    top: 19.4rem;
+    left: 4.4rem;
+}
+/* Archive Page */
+.archive{
+    width: 60rem;
+    height: 40rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
